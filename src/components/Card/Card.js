@@ -8,7 +8,7 @@ class Card extends Component {
       <div>
         {list.map(data =>
           <div>
-            {data.showBridge ? <img src='http://res.cloudinary.com/bguggie/image/upload/v1425514888/wide_ggbridge_bg_teneax.jpg' /> : <img src='http://res.cloudinary.com/bguggie/image/upload/v1425514736/place_holder_zuvywg.png' /> }
+            {data.showBridge ? <img src='http://res.cloudinary.com/bguggie/image/upload/v1425514888/wide_ggbridge_bg_teneax.jpg' alt='bridge' /> : <img src='http://res.cloudinary.com/bguggie/image/upload/v1425514736/place_holder_zuvywg.png' alt='placeholder' /> }
             <h5>{data.Heading}</h5>
             <span>{data.Subheading}</span>
             <span>{data.Price}</span>
