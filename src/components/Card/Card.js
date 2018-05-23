@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import list from '../../InterviewProject.json'
+import { Button } from 'reactstrap'
 
 class Card extends Component {
   render () {
@@ -8,6 +9,8 @@ class Card extends Component {
         {list.map(data =>
           <ol>{data.Heading}</ol>
         )}
+        <Button color='primary'>primary</Button>
+
       </div>
     )
   }
