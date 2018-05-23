@@ -1,11 +1,25 @@
 .card-container {
   display: flex;
   flex-flow: row wrap;
-  background-color: blue; }
+  background-color: #eeeeee;
+  padding: 1em; }
 
 .card-wrapper {
   display: flex;
   flex-direction: column;
   margin: 1em;
-  width: 16em;
-  background-color: red; }
+  width: 15em;
+  background-color: #fff;
+  border-radius: .5em; }
+
+.placeholder-card {
+  padding: 1.5em;
+  background-image: url("http://res.cloudinary.com/bguggie/image/upload/v1425514882/darktiles_bg_gike55.jpg"); }
+
+.image-container {
+  display: contents;
+  height: 5em; }
+
+.price {
+  color: green;
+  text-align: right; }
