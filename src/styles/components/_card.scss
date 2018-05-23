@@ -1,11 +1,16 @@
+
+$container-color-primary: blue;
+
 .card-container {
   display: flex;
   flex-flow: row wrap;
-  background-color: blue; }
+  background-color: $container-color-primary;
+}
 
 .card-wrapper {
   display: flex;
   flex-direction: column;
   margin: 1em;
   width: 16em;
-  background-color: red; }
+  background-color: red;
+}

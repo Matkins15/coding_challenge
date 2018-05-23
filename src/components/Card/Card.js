@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import list from '../../InterviewProject.json'
-import { Button } from 'reactstrap'
+// import { Col } from 'reactstrap'
 
 class Card extends Component {
   render () {
     return (
-      <div>
+      <div className='card-container'>
         {list.map(data =>
-          <div>
+          <div className='card-wrapper'>
             {data.showBridge ? <img src='http://res.cloudinary.com/bguggie/image/upload/v1425514888/wide_ggbridge_bg_teneax.jpg' alt='bridge' /> : <img src='http://res.cloudinary.com/bguggie/image/upload/v1425514736/place_holder_zuvywg.png' alt='placeholder' /> }
             <h5>{data.Heading}</h5>
             <span>{data.Subheading}</span>
+            <hr />
             <span>{data.Price}</span>
           </div>
         )}
-        <Button color='primary'>primary</Button>
       </div>
     )
   }
