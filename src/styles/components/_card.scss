@@ -3,7 +3,7 @@ $container-color-primary: #A3C5E0;
 
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == desktop {
-    @media (max-width: 1600px) { @content; }
+    @media (max-width: 1430px) { @content; }
   }
   @else if $breakpoint == tablet {
     @media (max-width: 1250px) { @content; }
@@ -12,7 +12,6 @@ $container-color-primary: #A3C5E0;
     @media (max-width: 650px)  { @content; }
   }
 }
-
 
 .code-challenge {
   background-color: $container-color-primary;

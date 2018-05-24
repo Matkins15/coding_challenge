@@ -8,7 +8,7 @@
   flex-flow: row wrap;
   margin: 0 auto;
   padding: 4em 2.5em; }
-  @media (max-width: 1600px) {
+  @media (max-width: 1430px) {
     .card-container {
       justify-content: center; } }
 
