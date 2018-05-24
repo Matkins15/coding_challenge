@@ -26,16 +26,15 @@ $container-color-primary: #A3C5E0;
   @include breakpoint(desktop) {
     justify-content: center;
   }
-}
-
-.card-wrapper {
-  flex-direction: column;
-  margin: 1em;
-  width: 15em;
-  background-color: #fff;
-  border-radius: .5em;
-  position: relative;
-  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+  .card-wrapper {
+    flex-direction: column;
+    margin: 1em;
+    width: 15em;
+    background-color: #fff;
+    border-radius: .5em;
+    position: relative;
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .image-container{
