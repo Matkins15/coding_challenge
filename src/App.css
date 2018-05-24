@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row wrap;
   background-color: #eeeeee;
-  padding: 1em; }
+  padding: 3em 2.25em; }
 
 .card-wrapper {
   display: flex;
@@ -10,16 +10,33 @@
   margin: 1em;
   width: 15em;
   background-color: #fff;
-  border-radius: .5em; }
-
-.placeholder-card {
-  padding: 1.5em;
-  background-image: url("http://res.cloudinary.com/bguggie/image/upload/v1425514882/darktiles_bg_gike55.jpg"); }
+  border-radius: .5em;
+  position: relative; }
 
 .image-container {
-  display: contents;
-  height: 5em; }
+  height: 11em;
+  background-image: url("http://res.cloudinary.com/bguggie/image/upload/v1425514882/darktiles_bg_gike55.jpg");
+  background-repeat: repeat;
+  background-size: 6em;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em; }
+  .image-container img {
+    width: 100%;
+    height: 100%; }
+  .image-container .bridge-card {
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em; }
+  .image-container .placeholder-card {
+    padding: 1.5em; }
 
-.price {
-  color: green;
-  text-align: right; }
+.content-container {
+  height: 11em;
+  padding: .75em; }
+  .content-container h4 {
+    text-transform: capitalize; }
+  .content-container .price-container .price {
+    color: green;
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    text-align: right; }
