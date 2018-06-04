@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 class Card extends Component {
-  // constructor (props) {
-  //   super(props)
-  //   let list = this.props.list
-  // }
+  constructor (props) {
+    super(props)
+    this.state = {
+      list: this.props.list
+    }
+    console.log(this.state.list)
+  }
 
   render () {
     return (
       <div className='card-container'>
-        {this.props.list.map(data =>
+        {this.state.list.map(data =>
           <div className='card-wrapper'>
             <div className='image-container'>
               {data.showBridge ? <img className='bridge-card' src='http://res.cloudinary.com/bguggie/image/upload/v1425514888/wide_ggbridge_bg_teneax.jpg' alt='bridge' /> : <img className='placeholder-card' src='http://res.cloudinary.com/bguggie/image/upload/v1425514736/place_holder_zuvywg.png' alt='placeholder' /> }
