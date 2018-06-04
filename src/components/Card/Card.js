@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import list from '../../InterviewProject.json'
-import Container from '../../components/Container/Container'
-
 class Card extends Component {
+  // constructor (props) {
+  //   super(props)
+  //   let list = this.props.list
+  // }
+
   render () {
     return (
       <div className='card-container'>
-        <Container />
-        {list.map(data =>
+        {this.props.list.map(data =>
           <div className='card-wrapper'>
             <div className='image-container'>
               {data.showBridge ? <img className='bridge-card' src='http://res.cloudinary.com/bguggie/image/upload/v1425514888/wide_ggbridge_bg_teneax.jpg' alt='bridge' /> : <img className='placeholder-card' src='http://res.cloudinary.com/bguggie/image/upload/v1425514736/place_holder_zuvywg.png' alt='placeholder' /> }

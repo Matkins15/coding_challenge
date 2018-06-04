@@ -1,11 +1,11 @@
 import React, { Component} from 'react'
 import list from '../../InterviewProject.json'
+import Card from '../../components/Card/Card'
 
 class Container extends Component {
   render () {
-    console.log(list)
     return (
-      <h1 list={list}>hello</h1>
+      <Card list={list} />
     )
   }
 }
