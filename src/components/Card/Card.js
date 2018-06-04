@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import list from '../../InterviewProject.json'
+import Container from '../../components/Container/Container'
 
 class Card extends Component {
   render () {
     return (
       <div className='card-container'>
+        <Container />
         {list.map(data =>
           <div className='card-wrapper'>
             <div className='image-container'>
